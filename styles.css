@@ -1,0 +1,300 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #EFF1FA;
+    position: relative;
+}
+
+.right-section {
+    top: 40px;
+    right: 40px;
+    background-color: white;
+    width: 400px;
+    height: 944px;
+    border-radius: 32px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.left-section {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    width: 950px;
+    height: 944px;
+}
+
+.logo {
+    position: absolute;
+    height: 48px;
+    width: 35px;
+}
+
+.person {
+    position: absolute;
+    width: 336px;
+    height: 304px;
+    top: 250px
+}
+
+.no-text {
+    position: absolute;
+    top: 570px;
+    font: bold 24px Arial;
+    color: #333;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.description {
+    position: absolute;
+    top: 650px;
+    font-size: 16px;
+    color: gray;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.input {
+    position: absolute;
+    top: 168px;
+    left: 240px;
+    font: lighter 32px sans-serif;
+    color: #0A3871;
+    background-color: transparent;
+    border-color: transparent;
+    width: 600px;
+    height: 600px;
+}
+
+.output {
+    position: absolute;
+    top: 40px;
+    font: lighter 24px sans-serif;
+    color: #495057;
+    background-color: transparent;
+    border-color: transparent;
+    width: 300px;
+    height: 700px;
+}
+
+textarea::placeholder {
+    color: #0A3871;
+}
+
+.alert {
+    position: absolute;
+    top: 840px;
+    left: 240px;
+    height: 16px;
+    width: 16px;
+}
+
+.text-alert {
+    position: absolute;
+    font: 12px sans-serif;
+    color: gray;
+    top: 830px;
+    left: 265px;
+}
+
+.buttons {
+    position: absolute;
+    top: 870px;
+    left: 240px;
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    padding: 16px 120px 16px 120px;
+    font: lighter sans-serif;
+    border-radius: 20px;
+    border-color: #0A3871;
+    border-width: 1px;
+    cursor: pointer;
+}
+
+.encrypt {
+    background-color: #0A3871;
+    color: rgb(201, 201, 201);
+    margin-right: 20px;
+}
+
+.decrypt {
+    background-color: #D8DFE8;
+    color: #0A3871;
+}
+
+.copy {
+    position: absolute;
+    background-color: white;
+    top: 870px;
+}
+
+/* Para Tablets */
+
+@media screen and (max-width: 768px),screen and (max-height: 1174px) {
+
+    .left-section {
+        width: 670px;
+        height: 780px;
+    }
+
+    .logo {
+        top: 20px;
+        left: 0px;
+    }
+
+    .input {
+        width: 97%;
+        height: 65%;
+        top: 15%;
+        left: 4px;
+    }
+
+    .alert {
+        top: 88.5%;
+        left: 4px;
+    }
+
+    .text-alert {
+        top: 87%;
+        left: 25px;
+    }
+
+    .buttons {
+        top: 93%;
+        left: 4px;
+    }
+
+    button {
+        padding: 16px 128px 16px 128px;
+    }
+
+    
+    .right-section {
+        width: 670px;
+        height: 230px;
+        top: 850px;
+        left: 40px;
+        border-radius: 32px;
+    }
+
+    .no-text {
+        font-size: 28px;
+        top: 21%;
+    }
+
+    .description {
+        font-size: 23px;
+        top: 53%;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .output {
+        top:15%;
+        width: 85%;
+        height: 40%;
+    }
+
+    .copy {
+        top: 70%;
+        width: 600px;
+    }
+
+    .person {
+        display: none;
+    }
+}
+
+/* Para Celulares */
+
+@media screen and (max-width: 375px),screen and (max-height: 933px) {
+
+    .left-section {
+        top:2%;
+        left:0%;
+        width: 360px;
+        height: 600px;
+    }
+
+    .logo {
+        top: 20px;
+        left: 0px;
+    }
+
+    .input {
+        width: 90%;
+        height: 53%;
+        top: 15%;
+        left: 4px;
+        font-size: 30px;
+    }
+
+    .alert {
+        top: 76%;
+        left: 4px;
+    }
+
+    .text-alert {
+        top: 74%;
+        left: 25px;
+    }
+
+    .buttons {
+        display: flex;
+        flex-direction: column;
+        top: 80%;
+        left: 4px;
+    }
+
+    button {
+        padding: 16px 128px 16px 128px;
+    }
+
+    .encrypt {
+        margin-right: 0px;
+        margin-bottom: 7px;
+    }
+
+    
+    .right-section {
+        width: 360px;
+        height: 230px;
+        top: 610px;
+        left: 0px;
+        border-radius: 32px;
+    }
+
+    .no-text {
+        font-size: 22px;
+        top: 18%;
+    }
+
+    .description {
+        font-size: 15px;
+        top: 53%;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .output {
+        top:10%;
+        width: 80%;
+        height: 47%;
+    }
+
+    .copy {
+        top: 70%;
+        width: 80%;
+    }
+
+    .person {
+        display: none;
+    }
+}
